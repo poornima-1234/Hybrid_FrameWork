@@ -10,11 +10,11 @@ public class Browser {
 		//create instance object
 		//System.setProperty("webdriver.chrome.driver","E:/chromedriver.exe");
 		//System.setProperty("webdriver.gecko.driver", "E:/geckodriver.exe");
-		WebDriver driver= new FirefoxDriver();
+		WebDriver driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		//launch url
-		driver.get("http://primusbank.qedgetech.com");
+		driver.get("http://facebook.com");
 		Thread.sleep(5000);
 		driver.quit();
 
